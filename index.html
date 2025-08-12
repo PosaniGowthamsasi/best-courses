@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Courses Aggregator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Best Online Courses</h1>
+      <p>
+        Top picks from Udemy, Coursera, Simplilearn, GeeksforGeeks, and YouTube
+      </p>
+    </header>
+
+    <section id="filters">
+      <input type="text" id="search" placeholder="Search courses..." />
+      <select id="platform">
+        <option value="All">All Platforms</option>
+        <option value="Udemy">Udemy</option>
+        <option value="Coursera">Coursera</option>
+        <option value="Simplilearn">Simplilearn</option>
+        <option value="GeeksforGeeks">GeeksforGeeks</option>
+        <option value="YouTube">YouTube</option>
+      </select>
+      <select id="domain">
+        <option value="All">All Domains</option>
+        <option value="AI">AI</option>
+        <option value="DevOps">DevOps</option>
+        <option value="Data Science">Data Science</option>
+        <option value="Cloud">Cloud</option>
+        <option value="Java">Java</option>
+        <option value="Python">Python</option>
+        <option value="Full Stack">Full Stack</option>
+      </select>
+      <select id="sort">
+        <option value="rating">Sort by Rating</option>
+        <option value="title">Sort by Title</option>
+      </select>
+    </section>
+
+    <main id="courseList"></main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
